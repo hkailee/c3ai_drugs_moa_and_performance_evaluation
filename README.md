@@ -39,7 +39,7 @@ $ pip install -r requirements.txt
     ├── WorkBook.ipynb        # Working notebook with codes used in this study
     ├── c3aidatalake.py      # A helper file shared across projects and quizzes
     ├── utils.py             # A helper utility file used in this project
-    └── requirements.txt     # Common packages used for the packages
+    └── requirements.txt     # Packages/versions used in this study
 
 ## Data
 Data used in this study was mainly downloaded using C3.ai api for COVID-19 Grand Challenge.
