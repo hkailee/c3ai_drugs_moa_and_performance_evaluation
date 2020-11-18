@@ -11,7 +11,7 @@ To derive the sparse relations between TAs and sentimental words, Pearson correl
 ___
 
 ## Use of Google Colab Pro to run the WorkBook.ipynb entirely  
-Google Colab Pro platform with Tesla-GPU-v100-SXM2-16gb in high-RAM(27gb) runtime was used when training the model.
+Google Colab Pro platform with Tesla-GPU-v100-SXM2-16gb in high-RAM runtime (27gb) was used when training the model.
 
 OR
 
