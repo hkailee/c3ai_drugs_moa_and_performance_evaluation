@@ -1,13 +1,14 @@
 # C3.ai Therapeutic Agents/Drugs Mechanism of Action (MOA) and Performance Evaluation  
 Since the severe acute respiratory syndrome - coronavirus 2 (SARS-COV-2) outbreak, repurposing of many existing therapeutic agents (TAs) previously designed for other virus infections are being put on trials for the coronavirus disease 2019 (COVID19) patients for possible immediate disease control and management. A quick understanding and bird-eye view on the MOA and performance of the TAs in experimental/clinical trial will be helpful in strategic life-saving and resource plannings.
 
-## Broad strategies covered
+## Summary of strategies covered
 All abstracts available from the COVID-19 Open Research Dataset (CORD-19) were pre-processed to obtain Word2Vec embeddings using SkipGram model. The embeddings was used to calculate the nearest neighbours of the keywords using cosine similarities. 
 
 Here, within the dimensional space of the Word2Vec embeddings, terms with similar context as well as forward-looking/backward-looking were assumed to cluster closer to a TA with varying degrees. Briefly, deep walking was first performed (10-nearest-words retrieval) on the study terms consisted of TAs and sentimental terms (consisted of positive and negative sentiment terms available), followed by subsequent 100 nearest words retrieval on the 10 nearest words retrieved from the previous study terms. 
 
 To derive the sparse relations between TAs and sentimental words, Pearson correlations between the study terms were computed according to the appearance of the words retrieved from the deep walkings. Lastly, the aggregate correlation scores for positive, negative, and uncertainty sentiments were relatively compared between the TAs. The results were validated using PubMed and medRxiv search.
 
+___
 ## Installation
 ### Virtual environment using anaconda is recommended
 ```
@@ -16,11 +17,11 @@ $ conda activate knowdisc_py36
 $ conda install ipykernel jupyter -y; python -m ipykernel install --user --name knowdisc_py36 --display-name "knowdisc_py36"; 
 ```
 
-### installation of necessary packages
+### Installations of necessary packages
 ```
 
-$ pip install pymed chart_studio wordcloud facets-overview tqdm
-$ pip install seaborn scikit-learn statsmodels numba torch
+$ pip install pymed chart_studio wordcloud facets-overview tqdm nltk
+$ pip install seaborn scikit-learn statsmodels numba torch networkx regex
 $ pip install scanpy[leiden]
 ```
 
@@ -30,7 +31,7 @@ OR
 $ pip install -r requirements.txt
 ```
 
-
+---
 ## Folder structure
     .
     ├── Data/                # Contains data used in this study (download links in WorkBook.ipynb)
