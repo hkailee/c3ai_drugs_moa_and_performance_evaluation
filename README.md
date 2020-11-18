@@ -1,5 +1,5 @@
 # C3.ai Therapeutic Agents/Drugs Mechanism of Action (MOA) and Performance Evaluation  
-Repurposing of existing therapeutic agents (TAs) previously designed for other virus infections are being put on trials for the COVID19 patients for immediate disease control and management. A quick global overview on mechanism of action (MOA) and current status of the trials in terms of efficacy and safety is required for strategic life-saving and resource plannings. The planning managers or applicants of the treatments need to monitor both qualitative and quantitative growth of textual data objectively and make strategic decisions based on how situations, as depicted in the scientific reports, evolve. 
+Since the severe acute respiratory syndrome - coronavirus 2 (SARS-COV-2) outbreak, repurposing of many existing therapeutic agents (TAs) previously designed for other virus infections are being put on trials for the coronavirus disease 2019 (COVID19) patients for possible immediate disease control and management. A quick understanding and bird-eye view on the MOA and performance of the TAs in experimental/clinical trial will be helpful in strategic life-saving and resource plannings.
 
 ## Broad strategies covered
 All abstracts available from the COVID-19 Open Research Dataset (CORD-19) were pre-processed to obtain Word2Vec embeddings using SkipGram model. The embeddings was used to calculate the nearest neighbours of the keywords using cosine similarities. 
@@ -19,10 +19,8 @@ $ conda install ipykernel jupyter -y; python -m ipykernel install --user --name 
 ### installation of necessary packages
 ```
 
-$ pip install pymed chart_studio
-$ pip install wordcloud
-$ pip install facets-overview
-$ pip install seaborn scikit-learn statsmodels numba
+$ pip install pymed chart_studio wordcloud facets-overview tqdm
+$ pip install seaborn scikit-learn statsmodels numba torch
 $ pip install scanpy[leiden]
 ```
 
