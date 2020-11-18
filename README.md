@@ -9,8 +9,9 @@ Here, within the dimensional space of the Word2Vec embeddings, terms with simila
 To derive the sparse relations between TAs and sentimental words, Pearson correlations between the study terms were computed according to the appearance of the words retrieved from the deep walkings. Lastly, the aggregate correlation scores for positive, negative, and uncertainty sentiments were relatively compared between the TAs. The results were validated using PubMed and medRxiv search.
 
 ___
-## Use of Google Colab Pro to run the WorkBook.ipynb entirely
-Google Colab Pro platform with Tesla-GPU-v100-SXM2-16gb in high-RAM(27gb) runtime was used.
+
+## Use of Google Colab Pro to run the WorkBook.ipynb entirely  
+Google Colab Pro platform with Tesla-GPU-v100-SXM2-16gb in high-RAM(27gb) runtime was used when training the model.
 
 OR
 
