@@ -36,7 +36,7 @@ $ pip install -r requirements.txt
     .
     ├── Data/                # Contains data used in this study (download links in WorkBook.ipynb)
     |     └── figures/       # Contains figures generated in this study
-    ├── WorkBook.ipynb        # Working notebook with codes used in this study
+    ├── WorkBook.ipynb       # Working notebook with codes used in this study
     ├── c3aidatalake.py      # A helper file containing c3ai API functions
     ├── utils.py             # A helper utility file used in this study
     └── requirements.txt     # Packages/versions used in this study
